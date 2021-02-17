@@ -1,0 +1,19 @@
+CREATE DATABASE perntodo; 
+
+CREATE TABLE todo(
+    todo_id SERIAL PRIMARY KEY, 
+    description VARCHAR(250) 
+); 
+
+CREATE TABLE login(
+    id SERIAL NOT NULL PRIMARY KEY, 
+    hash VARCHAR(100) NOT NULL, 
+    email TEXT UNIQUE NOT NULL 
+); 
+
+CREATE TABLE users(
+    id SERIAL NOT NULL PRIMARY KEY, 
+    name VARCHAR(100) NOT NULL, 
+    email TEXT NOT NULL, 
+    joined TIMESTAMP NOT NULL
+);
