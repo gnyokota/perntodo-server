@@ -1,4 +1,4 @@
-#To run set up the database: 
+## To set up the database:
 
 const pool = new Pool({
     user: 'postgres', 
